@@ -2,10 +2,10 @@ version: '3.4'
 
 services:
   voicechanger:
-    image: voicechanger:latest
-    build:
-      context: .
-      dockerfile: ./Dockerfile
+    image: ghcr.io/aoirusann/voicechanger:latest
+    # build:
+    #   context: .
+    #   dockerfile: ./Dockerfile
     entrypoint:
       - /bin/bash
       - -c
