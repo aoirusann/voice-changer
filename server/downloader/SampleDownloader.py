@@ -36,9 +36,10 @@ def downloadSample(mode: RVCSampleMode, modelId: str, model_dir: str, slotIndex:
 
 
 def getSampleInfos(mode: RVCSampleMode):
-    sampleJsonUrls, _sampleModels = getSampleJsonAndModelIds(mode)
-    sampleJsons = _generateSampleJsons(sampleJsonUrls)
-    samples = _generateSampleList(sampleJsons)
+    # sampleJsonUrls, _sampleModels = getSampleJsonAndModelIds(mode)
+    # sampleJsons = _generateSampleJsons(sampleJsonUrls)
+    # samples = _generateSampleList(sampleJsons)
+    samples = []
     return samples
 
 

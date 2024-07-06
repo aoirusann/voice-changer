@@ -164,10 +164,10 @@ if __name__ == "__main__":
         printMessage("failed to download weight for rvc", level=2)
 
     # ダウンロード(Sample)
-    try:
-        downloadInitialSamples(args.sample_mode, args.model_dir)
-    except Exception as e:
-        printMessage(f"[Voice Changer] loading sample failed {e}", level=2)
+    # try:
+    #     downloadInitialSamples(args.sample_mode, args.model_dir)
+    # except Exception as e:
+    #     printMessage(f"[Voice Changer] loading sample failed {e}", level=2)
 
     # PORT = args.p
 
