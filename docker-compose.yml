@@ -16,7 +16,7 @@ services:
         --host 0.0.0.0
         -p 6006
         --https true
-        --allowed-origins https://192.168.1.49:6006
+        --allowed-origins https://192.168.1.221:6006
         --content_vec_500 pretrain/checkpoint_best_legacy_500.pt
         --content_vec_500_onnx pretrain/content_vec_500.onnx
         --content_vec_500_onnx_on true
@@ -38,4 +38,5 @@ services:
       resources:
         reservations:
           devices:
-            - capabilities: [gpu]
+            - driver: nvidia
+              capabilities: [gpu]
